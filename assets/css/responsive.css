@@ -35,6 +35,10 @@
         height: 570px;
     }
 
+    .lg-h-50 {
+        height: 280px;
+    }
+
     .gallery__heading {
         margin: 0;
         margin-bottom: calc(64px - var(--gutter));

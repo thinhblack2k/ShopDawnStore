@@ -863,3 +863,22 @@ body {
     text-decoration: none;
     padding: 8px 0;
 }
+
+/* === start contact === */
+.contact__container {
+    max-width: 512px;
+}
+
+.contact__heading {
+    margin: 0;
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__time {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

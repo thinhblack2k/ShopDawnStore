@@ -30,6 +30,19 @@
    .blog{
         margin-top: calc(92px - var(--gutter));
     }
+
+    .gallery__item {
+        height: 570px;
+    }
+
+    .gallery__heading {
+        margin: 0;
+        margin-bottom: calc(64px - var(--gutter));
+    }
+    
+    .product__heading {
+        margin: 0;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -133,6 +146,7 @@
     .article__share {
         margin-top: 48px;
     }
+
 }
 
 @media (min-width: 1200px) {

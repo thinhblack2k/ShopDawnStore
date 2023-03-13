@@ -341,8 +341,8 @@ body {
 
 /* product */
 .product .col {
-    margin-bottom: 24px;
-}
+    margin-bottom: calc(24px - var(--gutter) * 2);
+} 
 
 .product__item {
 
@@ -881,4 +881,19 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+/* === start lookbook === */
+.gallery__item {
+    width: 100%;
+    height: 280px;
+}
+
+.gallery__heading {
+    margin: 0;
+    margin-bottom: calc(24px - var(--gutter));
+}
+
+.product__heading {
+    margin: 0;
 }

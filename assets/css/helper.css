@@ -127,6 +127,12 @@
     .lg-block {
         display: block;
     }
+
+    .lg-column {
+        flex-direction: column;
+    }
+
+    
 }
 
 @media (min-width: 1024px) {

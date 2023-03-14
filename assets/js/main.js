@@ -4,10 +4,12 @@
  */
 const iconMenu = document.querySelector('.header__menu--icon');
 const menuMobile = document.querySelector('.header__main--mobile');
+const body = document.querySelector('body');
 
 iconMenu.addEventListener('click', function() {
   iconMenu.classList.toggle('active');
   menuMobile.classList.toggle('active');
+  body.classList.toggle('hidden');
 });
 
 const itemBags = document.querySelector('#item-bags');
@@ -93,9 +95,11 @@ function lightbox_close() {
 function openSortMenu() {
   var sortMenu = document.querySelector('.sort__menu--mobile');
   sortMenu.classList.add('active');
+  body.classList.add('hidden');
 }
 
 function closeSortMenu() {
   var sortMenu = document.querySelector('.sort__menu--mobile');
   sortMenu.classList.remove('active');
+  body.classList.remove('hidden');
 }

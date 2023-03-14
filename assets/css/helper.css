@@ -7,6 +7,10 @@
     object-fit: cover;
 }
 
+.d-grid {
+    display: grid;
+}
+
 .d-flex {
     display: flex;
 }
@@ -128,11 +132,13 @@
         display: block;
     }
 
+    .lg-initital {
+        display: initial;
+    }
+
     .lg-column {
         flex-direction: column;
     }
-
-    
 }
 
 @media (min-width: 1024px) {

@@ -47,6 +47,26 @@
     .product__heading {
         margin: 0;
     }
+
+    /* === cart === */
+    .cart__item {
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "image title quantity total";
+    }
+
+    .cart__content .cart__image {
+        width: 100px;
+        height: 100px;
+        margin-right: 24px;
+    }
+
+    .cart__quantity {
+        width: 300px;
+    }
+
+    .cart__footer {
+        text-align: right;
+    }
 }
 
 @media (min-width: 1024px) {

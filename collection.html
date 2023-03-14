@@ -269,10 +269,33 @@
                                                 </div>
                                                 <div class="sort__item text-7">
                                                 <div class="sort__select p-relative">
-                                                    <select name="" id="">
-                                                        <option value="1">Best selling</option>
-                                                    </select>
-                                                    <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="p-absolute">
+                                                    <details class="sort__select p-relative">
+                                                        <summary class="cursor-pointer d-flex align-center">
+                                                            Best selling
+                                                            <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="">
+                                                        </summary>    
+                                                        <div class="sort__selectbox sort__selectbox--right p-absolute">
+                                                            <div class="selectbox__top d-flex space-between">
+                                                                <span class="selectbox__lable text-7">1 selected</span>
+                                                                <a class="text-7" href="#">Reset</a>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="selectbox__items">
+                                                                <div class="selectbox__item">
+                                                                    <label class="input__checkbox text-7">In stock (6)
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="selectbox__item">
+                                                                    <label class="input__checkbox text-7">Out of stock (1)
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </details>
                                                 </div>
                                                 </div>
                                             </div>
@@ -291,28 +314,150 @@
                                 Filter:
                             </div>
                             <div class="sort__item text-7">
-                                <div class="sort__select p-relative">
-                                        <select name="" id="">
-                                            <option value="1">Avalability</option>
-                                        </select>
-                                        <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="p-absolute">
-                                </div>
+                                <details class="sort__select p-relative">
+                                    <summary class="cursor-pointer d-flex align-center">
+                                        Avalability
+                                        <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="">
+                                    </summary>    
+                                    <div class="sort__selectbox p-absolute">
+                                        <div class="selectbox__top d-flex space-between">
+                                            <span class="selectbox__lable text-7">1 selected</span>
+                                            <a class="text-7" href="#">Reset</a>
+                                        </div>
+                                        <hr>
+                                        <div class="selectbox__items">
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">In stock (6)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Out of stock (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="sort__item text-7">
+                                <details class="sort__select p-relative">
+                                    <summary class="cursor-pointer d-flex align-center">
+                                        Price
+                                        <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="">
+                                    </summary>    
+                                    <div class="sort__selectbox p-absolute">
+                                        <div class="selectbox__top d-flex space-between">
+                                            <span class="selectbox__lable">The highest price is $615.00</span>
+                                            <a href="#">Reset</a>
+                                        </div>
+                                        <hr>
+                                        <div class="selectbox__inputs">
+                                            <div class="selectbox__input d-flex">
+                                                <div class="row">
+                                                    <div class="col" style="--w:6;">
+                                                        <input class="w-100" type="text" placeholder="From">
+                                                    </div>
+                                                    <div class="col" style="--w:6;">
+                                                        <input class="w-100" type="text" placeholder="To">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                             <div class="sort__item text-7">
-                                <div class="sort__select p-relative">
-                                        <select name="" id="">
-                                            <option value="1">Price</option>
-                                        </select>
-                                        <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="p-absolute">
-                                </div>
-                            </div>
-                            <div class="sort__item text-7">
-                                <div class="sort__select p-relative">
-                                    <select name="" id="">
-                                        <option value="1">Color</option>
-                                    </select>
-                                    <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="p-absolute">
-                                </div>
+                                <details class="sort__select p-relative">
+                                    <summary class="cursor-pointer d-flex align-center">
+                                        Color
+                                        <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="">
+                                    </summary>    
+                                    <div class="sort__selectbox p-absolute">
+                                        <div class="selectbox__top d-flex space-between">
+                                            <span class="selectbox__lable"></span>
+                                            <a href="#">Reset</a>
+                                        </div>
+                                        <hr>
+                                        <div class="selectbox__items">
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Butter (2)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Chocolate (2)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Demin (2)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Dry Rose (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Emerald (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Latte (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Milky (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Oceania (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Off White (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Olive Leaf (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Pastel (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Pink Cloud (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                         </div>
                     </div>
@@ -331,12 +476,33 @@
                                 Sort by:
                             </div>
                             <div class="sort__item text-7">
-                               <div class="sort__select p-relative">
-                                    <select name="" id="">
-                                        <option value="1">Best selling</option>
-                                    </select>
-                                    <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="p-absolute">
-                               </div>
+                                <details class="sort__select p-relative">
+                                    <summary class="cursor-pointer d-flex align-center">
+                                        Best selling
+                                        <img src="./assets/images/icon/icon-chevron-down.svg" alt="down" class="">
+                                    </summary>    
+                                    <div class="sort__selectbox sort__selectbox--right p-absolute">
+                                        <div class="selectbox__top d-flex space-between">
+                                            <span class="selectbox__lable text-7">1 selected</span>
+                                            <a class="text-7" href="#">Reset</a>
+                                        </div>
+                                        <hr>
+                                        <div class="selectbox__items">
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">In stock (6)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="selectbox__item">
+                                                <label class="input__checkbox text-7">Out of stock (1)
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                             <div class="sort__item text-7">
                                 8 products

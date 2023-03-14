@@ -639,24 +639,6 @@ body.hidden {
     color: var(--black)
 }
 
-.sort__select select {
-    cursor: pointer;
-    border: none;
-    background: var(--white-text);
-    outline: var(--white-text) solid thick;
-    color: var(--black-text);
-    font-family: 'Assistant';
-    padding-right: 8px;
-}
-
-.sort__select img {
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    z-index: 1;
-    background-color: var(--white-text);
-}
-
 .sort__menu--mobile {
     position: fixed;
     top: 0;
@@ -757,6 +739,115 @@ body.hidden {
     padding: 16px 47px;
 }
 
+.sort__select summary::marker {
+    color: var(--white-text);
+}
+
+.sort__selectbox {
+    z-index: 1;
+    min-width: 300px;
+    background-color: var(--white-text);
+    border: solid 1px var(--gray-light);
+}
+
+.sort__selectbox--right {
+    right: 0;
+}
+
+.selectbox__top {
+    padding: 16px;
+}
+
+.selectbox__top a {
+    color: var(--black-text);
+}
+
+.sort__selectbox hr{
+    margin: 0;
+    height: 1px;
+    background-color: var(--gray-light);
+}
+
+.selectbox__items {
+    padding: 0 16px;
+    margin-bottom: 7px;
+}
+
+.selectbox__item {
+    padding: 8px 0;
+}
+
+.input__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.input__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.input__checkbox .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: solid calc(1px / 2) var(--black);
+}
+  
+.input__checkbox:hover input ~ .checkmark {
+    background-color: var(--gray-light);
+}
+  
+.input__checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+    border: none;
+}
+  
+.input__checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.input__checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.input__checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.selectbox__inputs {
+    padding: 16px;
+}
+
+.selectbox__input {
+    gap: 14px;
+}
+
+.selectbox__input input {
+    padding: 16px;
+    border: 1px solid var(--gray-dark);
+}
 
 /* === start page about === */
 .about__container {

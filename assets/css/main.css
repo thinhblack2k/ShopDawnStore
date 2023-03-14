@@ -961,6 +961,7 @@ body.hidden {
 
 /* === start contact === */
 .contact__container {
+    width: 100%;
     max-width: 512px;
 }
 
@@ -976,6 +977,25 @@ body.hidden {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.contact__input input{
+    padding: 16px;
+    line-height: 0.9375px;
+}
+
+.contact__textarea textarea{
+    font-family: 'Assistant';
+    font-weight: 400;
+    padding: 16px;
+    height: 121px;
+
+}
+
+.contact__btn {
+    background-color: var(--black);
+    width: 106px;
+    height: 47px;
 }
 
 /* === start lookbook === */

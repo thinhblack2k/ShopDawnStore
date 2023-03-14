@@ -347,6 +347,7 @@ body.hidden {
 /* product */
 .product a {
     text-decoration: none;
+    color: var(--black-text);
 }
 
 .product .col {

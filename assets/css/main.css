@@ -1156,3 +1156,46 @@ body.hidden {
     background-color: var(--black);
 }
 
+/* === start product detail === */
+.product-detail {
+
+}
+
+.product-detail__media {
+
+}
+
+.product-detail__info {
+    padding-left: calc(40px - var(--gutter) * 2);
+}
+
+.product-detail__name {
+
+}
+
+.product-detail__color {
+
+}
+
+.color__item {
+    border: solid 1px var(--gray-dark);
+    color: var(--black-text);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    padding: 8px 12px;
+    border-radius: 99px;
+}
+
+.product-detail__quantity h3{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}

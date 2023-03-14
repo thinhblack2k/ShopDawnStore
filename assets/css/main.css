@@ -891,6 +891,7 @@ body {
 
 .gallery__heading {
     margin: 0;
+    width: 513px;
     margin-bottom: calc(24px - var(--gutter));
 }
 

@@ -73,9 +73,7 @@ body.hidden {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 0.94;
-    color: var(--white-text);
     background-color: transparent;
-    border: solid 1px var(--white-text);
 }
 
 /* header */
@@ -331,6 +329,9 @@ body.hidden {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 0.9375;
+    color: var(--white-text);
+    border: solid 1px white;
+    background-color: transparent;
 }
 
 /* section heading */
@@ -1162,20 +1163,72 @@ body.hidden {
 }
 
 .product-detail__media {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+}
 
+.product-detail__media::-webkit-scrollbar { 
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.product-detail__zoom {
+    top: 16px;
+    left: 16px;
+}
+
+.media__item {
+    min-width: 100%;
+    aspect-ratio: 1;
+}
+
+.product-detail__arrow {
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.arrow__container {
+    width: 138px;
+    padding: 12px;
+}
+
+.arrow__order {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--gray-dark);
+}
+
+.arrow__btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
 }
 
 .product-detail__info {
-    padding-left: calc(40px - var(--gutter) * 2);
+    
 }
 
 .product-detail__name {
-
+    margin: 0;
 }
 
-.product-detail__color {
-
+.product-detail__price {
+    margin: 16px 0;
 }
+
+.product-detail__color h3 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
 
 .color__item {
     border: solid 1px var(--gray-dark);
@@ -1188,6 +1241,18 @@ body.hidden {
     letter-spacing: 0.03em;
     padding: 8px 12px;
     border-radius: 99px;
+    cursor: pointer;
+}
+
+.color__item.active {
+    background-color: var(--black);
+    color: var(--white-text);
+}
+
+.color__item:hover {
+    background-color: var(--black);
+    color: var(--white-text);
+    transition: ease 0.3s;
 }
 
 .product-detail__quantity h3{
@@ -1198,4 +1263,18 @@ body.hidden {
     margin: 0;
     padding-top: 8px;
     padding-bottom: 12px;
+}
+
+.addcart__btn {
+    border: solid 1px var(--black);
+    padding: 16px 10px;
+    margin-top: 16px;
+}
+
+.buy__btn {
+    margin-top: 8px;
+    padding: 16px 10px;
+    color: var(--white-text);
+    background-color: var(--black);
+    border: solid 1px var(--black);
 }

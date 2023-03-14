@@ -67,6 +67,21 @@
     .cart__footer {
         text-align: right;
     }
+
+    /* === product-detail === */
+    .product-detail__info {
+        padding-left: calc(40px - var(--gutter) * 2);
+    }
+
+    .product-detail__media {
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .media__item--big {
+        grid-column: span 2;
+    }
 }
 
 @media (min-width: 1024px) {

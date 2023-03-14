@@ -139,6 +139,10 @@
     .lg-column {
         flex-direction: column;
     }
+
+    .pd-t-40 {
+        padding-top: calc(64px - var(--gutter));
+    }
 }
 
 @media (min-width: 1024px) {

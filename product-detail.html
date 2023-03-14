@@ -218,16 +218,53 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </header> 
         <!-- end header -->
 
         <!-- start detail product -->
-        <section class="product-detail">
+        <section class="product-detail pd-section">
             <div class="container">
                 <div class="row">
                     <div class="col" style="--w-lg:8;">
-                        <div class="product-detail__media">
-                            <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail1.jpg" alt="">
+                        <div class="product-detail__media d-flex p-relative w-100">
+                            <img class="product-detail__zoom cursor-pointer p-absolute" src="./assets/images/icon/icon-zoom.svg" alt="zoom">
+                            <div class="media__item media__item--big w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail1.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail2.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail3.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail4.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail5.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail6.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail7.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail8.jpg" alt="picture">
+                            </div>
+                            <div class="media__item w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail9.jpg" alt="picture">
+                            </div>
+                            <div class="media__item media__item--big w-100">
+                                <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product-detail10.jpg" alt="picture">
+                            </div>
+                        </div>
+                        <div class="product-detail__arrow lg-none d-flex justify-center">
+                            <div class="arrow__container d-flex align-center space-between">
+                                <button class="arrow__btn d-flex align-center justify-center"><img src="./assets/images/icon/chevron-left.svg" alt=""></button>
+                                <span class="arrow__order">1/10</span>
+                                <button class="arrow__btn d-flex align-center justify-center"><img src="./assets/images/icon/chevron-right.svg" alt=""></button>
+                            </div>
                         </div>
                     </div>
                     <div class="col" style="--w-lg:4;">
@@ -235,11 +272,11 @@
                             <h1 class="product-detail__name text-2">
                                 Brick
                             </h1>
-                            <span class="">$385.00 CAD</span>
+                            <span class="product-detail__price d-block">$385.00 CAD</span>
                             <div class="product-detail__color">
                                 <h3>Color</h3>
                                 <div class="color__items">
-                                    <button class="color__item btn">Cashmere Rose</button>
+                                    <button class="color__item btn active">Cashmere Rose</button>
                                     <button class="color__item btn">Chocolate</button>
                                     <button class="color__item btn">Jade</button>
                                     <button class="color__item btn">Denim</button>
@@ -255,6 +292,10 @@
                                     <button class="select__number--plus cursor-pointer p-absolute"><img src="./assets/images/icon/plus.svg" alt=""></button>
                                 </div>
                             </div>
+                            <button class="btn addcart__btn w-100">Add to cart</button>
+                            <button class="btn buy__btn w-100">Buy it now</button>
+
+                            <p>Inspired by the structural boxy form and shape of a brick, which lends its name, the bag is perfectly sized for your everyday essentials, from a large phone to your wallet and lipstick.</p>
                         </div>
                     </div>
                 </div>

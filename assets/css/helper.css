@@ -183,11 +183,7 @@
     .pd-bt-40 {
         padding-bottom: calc(64px - var(--gutter));
     }
-
-    .pd-bt-40 {
-        padding-bottom: calc(64px - var(--gutter));
-    }
-
+    
     .mg-t-40 {
         margin-top: 0;
     }

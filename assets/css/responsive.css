@@ -86,6 +86,11 @@
     .banner-detail__container {
         flex-direction: row-reverse;
     }
+
+    .product-search__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: calc(2 * var(--gutter));
+    }
 }
 
 @media (min-width: 1024px) {

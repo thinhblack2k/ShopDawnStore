@@ -498,6 +498,7 @@ body.hidden {
     position: fixed;
     z-index: 995;
     top: 0;
+    left: 0;
     background-color: #000;
     opacity: 0.8;
     width: 100%;

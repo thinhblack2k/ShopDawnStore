@@ -28,7 +28,7 @@ body {
     color: var(--black-text);
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
 }
 
 body.hidden {
@@ -53,18 +53,32 @@ body.hidden {
     line-height: 1.3;
 }
 
-.text-6 {
+.text-4 {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.72;
     letter-spacing: 0.04em;
 }
 
-.text-7 {
+.text-5 {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.text-6 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+}
+
+.text-7 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 0.9375;
+    letter-spacing: 0.04em;
 }
 
 .btn {
@@ -149,6 +163,10 @@ body.hidden {
 
 .subnav__item {
     padding: 12px 0;
+}
+
+.subnav > .subnav__item > a {
+    font-size: 1.3rem;
 }
 
 .subnav__item:hover {
@@ -243,13 +261,10 @@ body.hidden {
 }
 
 .social__items {
+    gap: 24px;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.social__items .social__item {
-    padding-right: 24px;
 }
 
 /* subnav mobile */
@@ -310,7 +325,6 @@ body.hidden {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(18, 18, 18, 0.4);
 }
 
 .slider__container {
@@ -334,9 +348,6 @@ body.hidden {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 0.9375;
     color: var(--white-text);
     border: solid 1px white;
     background-color: transparent;
@@ -353,22 +364,18 @@ body.hidden {
 }
 
 /* product */
+.product {
+    padding-bottom: calc(40px - 14px - var(--gutter) * 2);
+}
+
 .product a {
     text-decoration: none;
     color: var(--black-text);
 }
 
-.product .col {
+.product .product__item {
     margin-bottom: calc(24px - var(--gutter) * 2);
 } 
-
-.product__item {
-
-}
-
-.product__image {
-
-}
 
 .product__sale {
     left: 8px;
@@ -385,6 +392,13 @@ body.hidden {
 .product__name {
     margin: 0;
     margin-top: 4px;
+}
+
+.product__price--old {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* collage */
@@ -410,10 +424,6 @@ body.hidden {
 
 .collage__content .collage__name {
     margin: 0;
-}
-
-.collage__content .collage__price {
-    margin-top: 4px;
 }
 
 .collage__link a {
@@ -503,7 +513,7 @@ body.hidden {
     padding: calc(16px - var(--gutter)) 16px;
 }
 
-.partner__item img {
+.partner__item .partner__logo {
     margin-bottom: 16px;
 }
 
@@ -574,10 +584,6 @@ body.hidden {
     margin-top: calc(24px - var(--gutter) * 2);
 }
 
-.footer .social__item {
-    padding: 0 12px;
-}
-
 .footer__hr1 {
     margin: 0;
     top: 0;
@@ -628,14 +634,11 @@ body.hidden {
 }
 
 .footer__listpay {
+    gap: 6px;
     list-style: none;
     margin: 0;
     padding: 0;
     margin-bottom: calc(16px - var(--gutter) * 2 );
-}
-
-.listpay__item {
-    margin-right: 6px;
 }
 
 .footer__copy-right {
@@ -660,7 +663,7 @@ body.hidden {
 
 .sort__items {
     gap: 24px;
-    padding: 9px 0;
+    padding: 8px 0;
 }
 
 .sort__item {
@@ -929,10 +932,14 @@ body.hidden {
 }
 
 .blog__content {
+    max-width: 700px;
     padding: 24px;
 }
 
 .blog__content h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.3;
     margin: 0;
     margin-bottom: 4px;
 }
@@ -949,6 +956,18 @@ body.hidden {
 }
 
 /* === start article === */
+.article__img .container {
+    padding: 0;
+}
+
+.article__img .row {
+    margin-inline: 0;
+}
+
+.article__img .col{
+    padding: 0;
+}
+
 .article__container {
     max-width: 700px;
 }
@@ -1131,6 +1150,18 @@ body.hidden {
     margin-right: 26.5px;
 }
 
+.cart-view__product {
+    margin-top: 16px;
+}
+
+.cart__btn--view {
+    display: inline-block;
+    width: 120px;
+    text-decoration: none;
+    color: var(--white-text) !important;
+    background-color: var(--black);
+}
+
 /* select number */
 .select__number {
     width: 138px;
@@ -1184,8 +1215,13 @@ body.hidden {
 }
 
 .cart__btn {
+    color: var(--white-text);
     padding: 16px 144.5px;
     background-color: var(--black);
+}
+
+.product-cart__list {
+    padding-bottom: 0;
 }
 
 /* === start product detail === */
@@ -1248,6 +1284,8 @@ body.hidden {
 }
 
 .product-detail__price {
+    font-size: 1.7rem;
+    line-height: 1.3;
     margin: 16px 0;
 }
 
@@ -1295,7 +1333,7 @@ body.hidden {
     padding-top: 8px;
     padding-bottom: 12px;
 }
-
+ 
 .addcart__btn {
     border: solid 1px var(--black);
     padding: 16px 10px;

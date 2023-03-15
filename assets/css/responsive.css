@@ -82,6 +82,10 @@
     .media__item--big {
         grid-column: span 2;
     }
+
+    .banner-detail__container {
+        flex-direction: row-reverse;
+    }
 }
 
 @media (min-width: 1024px) {

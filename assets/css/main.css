@@ -545,6 +545,10 @@ body.hidden {
     margin-top: 24px;
 }
 
+.footer__logo {
+    padding-left: 40px;
+}
+
 .footer__input input{
     padding: 16.5px 16px;
     width: 100%;
@@ -1415,7 +1419,10 @@ body.hidden {
     padding-right: 50px;
 }
 
-.search-results__input .icon-search {
+.search-results__input .search__btn {
+    border: none;
+    padding: 0;
+    background-color: var(--white-text);
     right: 14px;
     top: 50%;
     transform: translateY(-50%);

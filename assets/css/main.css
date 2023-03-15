@@ -750,6 +750,14 @@ body.hidden {
     padding: 16px 47px;
 }
 
+.sort__select[open] .icon-open {
+    display: none;
+}
+
+.sort__select[open] .icon-close {
+    display: block;
+}
+
 .sort__select summary::marker {
     color: var(--white-text);
 }

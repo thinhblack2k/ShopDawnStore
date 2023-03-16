@@ -96,10 +96,6 @@ body.hidden {
     z-index: 1;
 }
 
-.header .container {
-    padding: 0;
-}
-
 .header__topbar {
     box-shadow: inset 0px -1px 0px #E1E3E5;
 }
@@ -160,12 +156,9 @@ body.hidden {
     z-index: 5;
 }
 
-.subnav__item {
-    padding: 12px 0;
-}
-
 .subnav > .subnav__item > a {
     font-size: 1.3rem;
+    line-height: 41px;
 }
 
 .subnav__item:hover {
@@ -350,19 +343,20 @@ body.hidden {
     background-color: transparent;
 }
 
-/* section heading */
-.section__heading h2 {
-    margin: 0;
-    margin-bottom: 32px;
-}
 
-.section__heading p {
-    margin: 0;
-}
 
 /* product */
 .product {
     padding-bottom: calc(40px - 14px - var(--gutter) * 2);
+}
+
+.product__heading h2 {
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.product__heading p {
+    margin: 0;
 }
 
 .product a {
@@ -391,11 +385,16 @@ body.hidden {
     margin-top: 4px;
 }
 
+.product__price {
+    word-break: break-all;
+}
+
 .product__price--old {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 10px;
 }
 
 /* collage */
@@ -404,10 +403,20 @@ body.hidden {
     margin-bottom: calc(24px - var(--gutter));
 }
 
+.collage__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.collage__item--large {
+    grid-column: span 2;
+}
+
 .collage__content {
     width: 100%;
     padding: 14px 24px;
     word-wrap: break-word;
+    word-break: break-all;
     background-color: var(--color-bg);
 }
 
@@ -515,6 +524,14 @@ body.hidden {
 }
 
 /*=== footer ===*/
+.footer__top {
+    box-shadow: inset 0px 1px 0px #E1E3E5;
+}
+
+.footer__bottom {
+    box-shadow: inset 0px 1px 0px #E1E3E5;
+}
+
 .footer__heading h3 {
     margin: 0;
     font-size: 1.8rem;
@@ -538,7 +555,8 @@ body.hidden {
     color: var(--black-text);
 }
 
-.heading__context {
+.footer__context {
+    color: var(--gray-text);
     margin: 0;
     padding-top: 22px;
 }
@@ -555,9 +573,7 @@ body.hidden {
 .footer__input input{
     padding: 16.5px 16px;
     width: 100%;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 0.9375;
+    color: var(--gray-text);
     border: none;
 }
 
@@ -575,20 +591,6 @@ body.hidden {
 
 .footer .social__items {
     margin-top: calc(24px - var(--gutter) * 2);
-}
-
-.footer__hr1 {
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.footer__hr2 {
-    margin: 0;
-    bottom: 213px;
-    left: 0;
-    right: 0;
 }
 
 .footer__select {
@@ -616,6 +618,7 @@ body.hidden {
 }
 
 .footer__select select {
+    font-family: 'Assistant';
     color: var(--gray-text);
     background-color: var(--white-text);
     font-size: 1.3rem;

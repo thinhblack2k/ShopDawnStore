@@ -33,6 +33,9 @@
 }
 
 @media (min-width: 992px) {
+    .container {
+        padding-inline: 64px;
+    }
     /* text size */
     .text-1 {
         font-size: 5.2rem;
@@ -86,6 +89,26 @@
     .product__price--old {
         display: inline-block;
         margin-right: 10px;
+    }
+
+    /* === collage === */
+    .collage__items {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    
+    .collage__item--large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* === footer === */
+    .link__item a {
+        color: var(--gray-text);
+    }
+    
+    .footer__context {
+        color: var(--gray-text);
     }
 
    /* === start blog === */
@@ -236,15 +259,7 @@
     }
 
     .article__img .container {
-        padding: 12.5;
-    }
-    
-    .article__img .row {
-        margin-inline: calc(-1 * var(--gutter));
-    }
-    
-    .article__img .col{
-        padding: calc(1 * var(--gutter));
+        padding-inline: 64px;
     }
 
     .article__share {

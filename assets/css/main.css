@@ -837,7 +837,7 @@ body.hidden {
     left: 0;
     height: 16px;
     width: 16px;
-    border: solid calc(1px / 2) var(--black);
+    border: 0.5px solid var(--black);
 }
   
 .input__checkbox:hover input ~ .checkmark {

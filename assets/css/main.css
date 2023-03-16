@@ -1039,6 +1039,11 @@ body.hidden {
 .contact__input input{
     padding: 16px;
     line-height: 0.9375px;
+    color: var(--gray-text);
+}
+
+.contact__input input::placeholder {
+    
 }
 
 .contact__textarea textarea{
@@ -1048,6 +1053,7 @@ body.hidden {
 }
 
 .contact__btn {
+    color: var(--white-text);
     background-color: var(--black);
     width: 106px;
     height: 47px;
@@ -1209,7 +1215,8 @@ body.hidden {
 
 .cart__btn {
     color: var(--white-text);
-    padding: 16px 144.5px;
+    width: 100%;
+    max-width: 357px;
     background-color: var(--black);
 }
 

@@ -600,10 +600,10 @@ body.hidden {
 
 .footer__select .icon-down {
     height: 38px;
-    width: 31px;
+    width: 30px;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: 1px;
     background-color: var(--white-text);
     z-index: 1;
 }

@@ -387,6 +387,7 @@ body.hidden {
 
 .product__price {
     word-break: break-all;
+    flex-wrap: wrap;
 }
 
 .product__price--old {
@@ -1419,10 +1420,6 @@ body.hidden {
     border: solid 1px var(--black-text);
     text-decoration: none;
     color: var(--black-text);
-}
-
-.policy .container {
-    padding: var(--gutter) 12.5px;
 }
 
 .policy .policy__content {

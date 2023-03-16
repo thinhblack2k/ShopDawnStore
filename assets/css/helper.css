@@ -126,6 +126,10 @@
     .md-block {
         display: block;
     }
+
+    .md-column {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 992px) {

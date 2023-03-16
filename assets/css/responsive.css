@@ -27,7 +27,9 @@
 }
 
 @media (min-width: 768px){
-   
+    .collage__item--new {
+        flex-direction: column-reverse;
+    }
 }
 
 @media (min-width: 992px) {

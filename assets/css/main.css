@@ -1069,10 +1069,7 @@ h6,
 .contact__input input{
     padding: 16px;
     color: var(--gray-text);
-}
-
-.contact__input input::placeholder {
-    
+    font-family: 'Assistant';
 }
 
 .contact__textarea textarea{
@@ -1090,8 +1087,8 @@ h6,
 .contact__btn {
     color: var(--white-text);
     background-color: var(--black);
-    width: 106px;
-    height: 47px;
+    padding: 16px 36px;
+    border: none;
     margin-top: calc(32px - var(--gutter) * 2)
 }
 

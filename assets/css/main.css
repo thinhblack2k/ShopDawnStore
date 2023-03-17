@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Assistant';
+    font-family: 'Assistant', sans-serif;
     font-size: 1.6rem;
     line-height: 1.72;
     font-weight: 400;
@@ -47,6 +47,7 @@ h6,
 .heading-5,
 .heading-6,
 .heading-7 {
+    font-family: 'Assistant';
     font-weight: 400;
 }
 

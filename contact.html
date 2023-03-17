@@ -16,7 +16,7 @@
     <!-- start google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
     <!-- end google font -->
 </head>
 <body>
@@ -224,16 +224,16 @@
         <!-- end header -->
 
         <!-- start contact -->
-        <section class="contact pd-t-40">
+        <section class="contact pd-section">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-center">
                         <div class="contact__container">
-                            <h1 class="contact__heading heading-1">
+                            <h1 class="contact__heading heading-2">
                                 Contact us
                             </h1>
 
-                            <h3 class="contact__title">
+                            <h3 class="contact__title heading-4">
                                 Hours
                             </h3>
 
@@ -249,33 +249,33 @@
         </section>
         <!-- end contact -->
 
-        <section class="contact--form pd-section">
+        <section class="contact--form pd-bt-40">
             <div class="container d-flex justify-center">
                 <div class="contact__container">
                     <form action="#">
-                        <div class="row">
+                        <div class="row contact__input--double">
                             <div class="col" style="--w-lg:6;">
                                 <div class="contact__input">
-                                    <input class="heading-4 w-100" type="text" placeholder="Name">
+                                    <input class="heading-7 w-100" type="text" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col" style="--w-lg:6;">
                                 <div class="contact__input">
-                                    <input class="heading-4 w-100" type="email" placeholder="Email">
+                                    <input class="heading-7 w-100" type="email" placeholder="Email">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="contact__input">
-                                    <input class="heading-4 w-100" type="text" placeholder="Phone number">
+                                    <input class="heading-7 w-100" type="text" placeholder="Phone number">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="contact__textarea w-100 h-100">
-                                    <textarea class="heading-4 w-100 h-100" name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                                    <textarea class="heading-7 w-100 h-100" name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -345,11 +345,11 @@
                     <div class="row pd-bt-40 align-center">
                         <div class="col" style="--w-lg:4;">
                             <form action="#">
-                                <div class="footer__heading text-center">
-                                    <h3>Subscribe to our emails</h3>
-                                </div>
+                                <label for="email-submit" class="footer__heading text-center">
+                                    Subscribe to our emails
+                                </label>
                                 <div class="footer__input p-relative">
-                                    <input class="heading-7" type="email" placeholder="Email">
+                                    <input class="heading-7" type="email" placeholder="Email" id="email-submit">
                                     <button type="submit" class="p-absolute"><img src="./assets/images/icon/icon-nextlink.svg" alt=""></button>
                                 </div>
                             </form>
@@ -396,9 +396,9 @@
                     <div class="row pd-40 p-relative">
                         <div class="col footer__select-box d-flex justify-center" style="--w-lg:4;">
                             <div class="select__item">
-                                <div class="footer__lable heading-6">
+                                <label for="select-country" class="footer__lable heading-6">
                                     Country/region
-                                </div>
+                                </label>
                                 <div class="footer__select p-relative">
                                     <select class="heading-6" name="country" id="select-country">
                                         <option value="1">
@@ -414,9 +414,9 @@
                                 </div>
                             </div>
                             <div class="select__item">
-                                <div class="footer__lable heading-6">
+                                <label for="select-language" class="footer__lable heading-6">
                                     Language
-                                </div>
+                                </label>
                                 <div class="footer__select p-relative">
                                     <select class="heading-6" name="language" id="select-language">
                                         <option value="1">

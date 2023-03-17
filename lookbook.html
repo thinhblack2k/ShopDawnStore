@@ -16,7 +16,7 @@
     <!-- start google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
     <!-- end google font -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -252,8 +252,8 @@
                     </div>
                     <div class="col" style="--w:6; --w-lg:8;"> 
                         <div class="gallery__item p-relative">
-                            <img class="w-100 h-100 d-block object-fit-cover" src="./assets/images/banner/lookbook4.jpg" alt="image lookbook">
-                            <button class="video__btn vpop p-absolute cursor-pointer" data-type="youtube"><img src="./assets/images/banner/playbutton.png" alt="play"></button>
+                            <img class="vpop cursor-pointer w-100 h-100 d-block object-fit-cover" src="./assets/images/banner/lookbook4.jpg" alt="image lookbook">
+                            <button class="video__btn p-absolute cursor-pointer" data-type="youtube"><img src="./assets/images/banner/playbutton.png" alt="play"></button>
                         </div>
                     </div>
                 </div>
@@ -272,8 +272,8 @@
                             </div>
                             <div class="col" style="--w:6; --w-lg:12;">
                                 <div class="gallery__item lg-h-50 p-relative">
-                                    <img class="w-100 h-100 d-block object-fit-cover" src="./assets/images/banner/lookbook7.jpg" alt="image lookbook">
-                                    <button class="video__btn vpop p-absolute cursor-pointer" data-type="youtube"><img src="./assets/images/banner/playbutton.png" alt="play"></button>
+                                    <img class="w-100 h-100 vpop cursor-pointer d-block object-fit-cover" src="./assets/images/banner/lookbook7.jpg" alt="image lookbook">
+                                    <button class="video__btn p-absolute cursor-pointer" data-type="youtube"><img src="./assets/images/banner/playbutton.png" alt="play"></button>
                                 </div>
                             </div>
                         </div>
@@ -320,7 +320,7 @@
         <!-- end galllery -->
         
         <!-- start product -->
-        <section class="product">
+        <section class="product product-cart__list pd-bt-40">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -337,7 +337,9 @@
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product9.jpg" alt="product">
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -346,13 +348,15 @@
                             <div class="product__item">
                                 <div class="product__image p-relative">
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product7.jpg" alt="product">
-                                    <span class="product__sale p-absolute">
+                                    <span class="product__sale heading-6 p-absolute">
                                         Sale
                                     </span>
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -361,13 +365,15 @@
                             <div class="product__item">
                                 <div class="product__image p-relative">
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product3.jpg" alt="product">
-                                    <span class="product__sale p-absolute">
+                                    <span class="product__sale heading-6 p-absolute">
                                         Sale
                                     </span>
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -376,18 +382,18 @@
                             <div class="product__item">
                                 <div class="product__image p-relative">
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product4.jpg" alt="product">
-                                    <span class="product__sale p-absolute">
+                                    <span class="product__sale heading-6 p-absolute">
                                         Sale
                                     </span>
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col" style="--w:6; --w-lg:3;">
                         <a href="product-detail.html">
                             <div class="product__item">
@@ -395,7 +401,9 @@
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product5.jpg" alt="product">
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -404,13 +412,15 @@
                             <div class="product__item">
                                 <div class="product__image p-relative">
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product6.jpg" alt="product">
-                                    <span class="product__sale p-absolute">
+                                    <span class="product__sale heading-6 p-absolute">
                                         Sale
                                     </span>
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -419,13 +429,15 @@
                             <div class="product__item">
                                 <div class="product__image p-relative">
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product2.jpg" alt="product">
-                                    <span class="product__sale p-absolute">
+                                    <span class="product__sale heading-6 p-absolute">
                                         Sale
                                     </span>
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -434,13 +446,15 @@
                             <div class="product__item">
                                 <div class="product__image p-relative">
                                     <img class="w-100 d-block object-fit-cover" src="./assets/images/product/product8.jpg" alt="product">
-                                    <span class="product__sale p-absolute">
+                                    <span class="product__sale heading-6 p-absolute">
                                         Sale
                                     </span>
                                 </div>
                                 <h3 class="product__name heading-5">Hobo Small</h3>
-                                <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
-                                <span class="product__price heading-4">$195.00 CAD</span>
+                                <div class="product__price d-flex align-center">
+                                    <del class="product__price--old heading-5 d-block">$200.00 CAD</del>
+                                    <span class="product__price--new heading-4">$195.00 CAD</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -501,11 +515,11 @@
                     <div class="row pd-bt-40 align-center">
                         <div class="col" style="--w-lg:4;">
                             <form action="#">
-                                <div class="footer__heading text-center">
-                                    <h3>Subscribe to our emails</h3>
-                                </div>
+                                <label for="email-submit" class="footer__heading text-center">
+                                    Subscribe to our emails
+                                </label>
                                 <div class="footer__input p-relative">
-                                    <input class="heading-7" type="email" placeholder="Email">
+                                    <input class="heading-7" type="email" placeholder="Email" id="email-submit">
                                     <button type="submit" class="p-absolute"><img src="./assets/images/icon/icon-nextlink.svg" alt=""></button>
                                 </div>
                             </form>
@@ -552,9 +566,9 @@
                     <div class="row pd-40 p-relative">
                         <div class="col footer__select-box d-flex justify-center" style="--w-lg:4;">
                             <div class="select__item">
-                                <div class="footer__lable heading-6">
+                                <label for="select-country" class="footer__lable heading-6">
                                     Country/region
-                                </div>
+                                </label>
                                 <div class="footer__select p-relative">
                                     <select class="heading-6" name="country" id="select-country">
                                         <option value="1">
@@ -570,9 +584,9 @@
                                 </div>
                             </div>
                             <div class="select__item">
-                                <div class="footer__lable heading-6">
+                                <label for="select-language" class="footer__lable heading-6">
                                     Language
-                                </div>
+                                </label>
                                 <div class="footer__select p-relative">
                                     <select class="heading-6" name="language" id="select-language">
                                         <option value="1">

@@ -16,7 +16,7 @@
     <!-- start google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
     <!-- end google font -->
 </head>
 <body>
@@ -715,11 +715,11 @@
                     <div class="row pd-bt-40 align-center">
                         <div class="col" style="--w-lg:4;">
                             <form action="#">
-                                <div class="footer__heading text-center">
-                                    <h3>Subscribe to our emails</h3>
-                                </div>
+                                <label for="email-submit" class="footer__heading text-center">
+                                    Subscribe to our emails
+                                </label>
                                 <div class="footer__input p-relative">
-                                    <input class="heading-7" type="email" placeholder="Email">
+                                    <input class="heading-7" type="email" placeholder="Email" id="email-submit">
                                     <button type="submit" class="p-absolute"><img src="./assets/images/icon/icon-nextlink.svg" alt=""></button>
                                 </div>
                             </form>
@@ -766,9 +766,9 @@
                     <div class="row pd-40 p-relative">
                         <div class="col footer__select-box d-flex justify-center" style="--w-lg:4;">
                             <div class="select__item">
-                                <div class="footer__lable heading-6">
+                                <label for="select-country" class="footer__lable heading-6">
                                     Country/region
-                                </div>
+                                </label>
                                 <div class="footer__select p-relative">
                                     <select class="heading-6" name="country" id="select-country">
                                         <option value="1">
@@ -784,9 +784,9 @@
                                 </div>
                             </div>
                             <div class="select__item">
-                                <div class="footer__lable heading-6">
+                                <label for="select-language" class="footer__lable heading-6">
                                     Language
-                                </div>
+                                </label>
                                 <div class="footer__select p-relative">
                                     <select class="heading-6" name="language" id="select-language">
                                         <option value="1">

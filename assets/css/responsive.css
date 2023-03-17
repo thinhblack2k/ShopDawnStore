@@ -182,6 +182,12 @@
     .policy__context {
         color: var(--black-text);
     }
+
+    /* === contact === */
+    .contact__input--double {
+        gap: 6px; 
+        flex-wrap: nowrap;
+    }
 }
 
 @media (min-width: 1024px) {

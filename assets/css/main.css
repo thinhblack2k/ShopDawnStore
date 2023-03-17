@@ -555,7 +555,6 @@ h6,
     box-shadow: inset 0px 1px 0px #E1E3E5;
 }
 
-.footer__heading h3,
 .footer__heading {
     margin: 0;
     font-size: 1.8rem;
@@ -1067,17 +1066,27 @@ h6,
 }
 
 .contact__input input{
+    outline: none;
+    border: solid 1px var(--gray-dark);
+    border-radius: 0;
     padding: 16px;
     color: var(--gray-text);
     font-family: 'Assistant';
 }
 
+.contact__input input::placeholder {
+    color: var(--gray-text);
+}
+
 .contact__textarea textarea{
+    color: var(--gray-text);
+    border-radius: 0px;
     font-family: 'Assistant';
     padding: 16px;
 }
 
 .contact__textarea textarea::placeholder {
+    color: var(--gray-text);
     font-family: 'Assistant';
     font-size: 1.6rem;
     font-weight: 400;

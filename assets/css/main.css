@@ -1252,6 +1252,7 @@ h6,
 .cart__btn {
     color: var(--white-text);
     width: 100%;
+    border: none;
     max-width: 357px;
     background-color: var(--black);
 }

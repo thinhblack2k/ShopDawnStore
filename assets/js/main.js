@@ -12,33 +12,49 @@ iconMenu.addEventListener('click', function() {
   body.classList.toggle('hidden');
 });
 
-const itemBags = document.querySelector('#item-bags');
-const itemShoes = document.querySelector('#item-shoes');
-const paneBags = document.querySelector('#pane-bages');
-const paneShoes = document.querySelector('#pane-shoes');
-const backBags = document.querySelector('#back-bages');
-const backShoes = document.querySelector('#back-shoes');
-const mainItem = document.querySelector('.header__container--mobile');
+const subnavBack = document.querySelector('.menu__subnav--back');
+const itemBags = document.querySelector('.item-bags');
+const itemShoes = document.querySelector('.item-shoes');
+const linkNext = document.querySelectorAll('.next-sub-link');
+const backBags = document.querySelector('.back-bags');
+const backShoes = document.querySelector('.back-shoes');
+const paneBags = document.querySelector('.pane-bags');
+const paneShoes = document.querySelector('.pane-shoes');
 
 itemBags.addEventListener('click', function() {
-  mainItem.style.display = 'none';
+  subnavBack.classList.add('activebags');
+  linkNext.forEach(element => {
+    element.classList.add('active');
+  });
   paneBags.style.display = 'block';
 });
 
-itemShoes.addEventListener('click', function() {
-  mainItem.style.display = 'none';
-  paneShoes.style.display = 'block';
-});
-
-backBags.addEventListener('click', function() {
-  mainItem.style.display = 'block';
+subnavBack.addEventListener('click', function() {
+  subnavBack.classList.remove('activebags');
+  linkNext.forEach(element => {
+    element.classList.remove('active');
+  });
   paneBags.style.display = 'none';
 });
 
-backShoes.addEventListener('click', function() {
-  mainItem.style.display = 'block';
+
+
+itemShoes.addEventListener('click', function() {
+  subnavBack.classList.add('activeshoes');
+  linkNext.forEach(element => {
+    element.classList.add('active');
+  });
+  paneShoes.style.display = 'block';
+});
+
+subnavBack.addEventListener('click', function() {
+  subnavBack.classList.remove('activeshoes');
+  linkNext.forEach(element => {
+    element.classList.remove('active');
+  });
   paneShoes.style.display = 'none';
 });
+
 
 /**
  * Xử lý popule video

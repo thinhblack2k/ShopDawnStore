@@ -231,7 +231,7 @@ h6,
 }
 
 .menu__items--mobile {
-    margin-top: 51px;
+    margin-top: 4px;
     list-style: none;
     padding: 0;
 }
@@ -252,6 +252,26 @@ h6,
     line-height: 0.83;
     font-weight: 600;
     letter-spacing: 0.04em;
+    animation: slideInRight ease .3s;
+}
+
+.subnav__item--mobile {
+    margin: 5px 0;
+}
+
+.subnav__item--mobile:hover {
+    background-color: var(--color-bg);
+}
+
+.subnav__item--mobile a {
+    padding: 12.5px 32px;
+    text-decoration: none;
+    color: var(--black-text);
+    font-size: 1.8rem;
+    line-height: 0.83;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    animation: slideInLeft ease .3s;
 }
 
 .header__footer--mobile {
@@ -286,6 +306,7 @@ h6,
 /* subnav mobile */
 .menu__subnav--mobile {
     margin: 0;
+    margin-top: 52px;
     display: none;
     width: 100%;
     list-style: none;
@@ -315,6 +336,29 @@ h6,
         transform: translateX(0);
         opacity: 1;
     }
+}
+.next-sub-link.active {
+    display: none;
+}
+
+
+.menu__subnav--back.activebags .back-bags {
+    animation: slideInLeft ease .3s;
+    display: flex;
+}
+
+.menu__subnav--back.activeshoes .back-shoes {
+    animation: slideInLeft ease .3s;
+    display: flex;
+}
+
+
+.menu__subnav--back {
+    height: 46px;
+}
+
+.menu__subnav--back:hover {
+    background-color: var(--white-text);
 }
 
 .menu__subnav--back a {

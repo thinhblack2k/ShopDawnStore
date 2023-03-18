@@ -108,7 +108,7 @@
 }
 
 .mg-t-40 {
-    margin-top: calc(40px - var(--gutter) * 2);
+    margin-top: calc(40px - var(--gutter) * 2) !important;
 }
 
 .mg-t-25 {

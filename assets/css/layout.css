@@ -18,7 +18,6 @@
 }
 
 @media (min-width: 576px){
-
     [style*="--w-sm"] {
         width: calc((100% / 12) * var(--w-sm));
         max-width: calc((100% / 12) * var(--w-sm));
